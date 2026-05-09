@@ -10,7 +10,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
     // SELECT * FROM users WHERE username = ?
     Optional<User> findByUsername(String username);
 
-    // Check if email already exists (used during registration validation)
+    // Check if email already exists 
     boolean existsByEmail(String email);
 
     // Check if username already exists
